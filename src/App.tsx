@@ -137,7 +137,7 @@ function App() {
               <a href="https://github.com/farukdnc27" className="text-slate-400 hover:text-emerald-400 transition-colors">
                 <Github className="w-6 h-6" />
               </a>
-              <a href="https://www.linkedin.com/in/%C3%B6mer-faruk-dincoglu/" className="text-slate-400 hover:text-blue-400 transition-colors">
+              <a href="https://www.linkedin.com/in/ömerfarukdincoglu" className="text-slate-400 hover:text-blue-400 transition-colors">
                 <Linkedin className="w-6 h-6" />
               </a>
               <a href="mailto:farukdincoglu27@gmail.com" className="text-slate-400 hover:text-red-400 transition-colors">

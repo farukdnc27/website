@@ -43,7 +43,7 @@ export default function Home({ t, lang }: HomeProps) {
                             <a href="https://github.com/farukdnc27" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-800 hover:bg-slate-700 rounded-lg text-slate-300 hover:text-white transition-colors border border-slate-700">
                                 <Github className="w-5 h-5" />
                             </a>
-                            <a href="https://www.linkedin.com/in/%C3%B6mer-faruk-dincoglu/" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-800 hover:bg-slate-700 rounded-lg text-slate-300 hover:text-white transition-colors border border-slate-700">
+                            <a href="https://www.linkedin.com/in/ömerfarukdincoglu" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-800 hover:bg-slate-700 rounded-lg text-slate-300 hover:text-white transition-colors border border-slate-700">
                                 <Linkedin className="w-5 h-5" />
                             </a>
                             <a href="mailto:farukdincoglu27@gmail.com" className="p-3 bg-slate-800 hover:bg-slate-700 rounded-lg text-slate-300 hover:text-white transition-colors border border-slate-700">
