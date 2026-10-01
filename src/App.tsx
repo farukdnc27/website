@@ -95,7 +95,7 @@ const content = {
 const skillIcons = [Code2, Database, ScanLine];
 
 function App() {
-  const [language, setLanguage] = useState<Language>('tr');
+  const [language, setLanguage] = useState<Language>('en');
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const t = content[language];
