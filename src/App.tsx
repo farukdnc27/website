@@ -244,6 +244,8 @@ type PageIntroProps = {
 };
 
 function PageIntro({ kicker, title, body }: PageIntroProps) {
+  const sectionNumber = kicker.split('/')[0].trim();
+
   return (
     <section className="page-hero">
       <div className="page-hero__grid" aria-hidden="true" />
@@ -251,6 +253,10 @@ function PageIntro({ kicker, title, body }: PageIntroProps) {
       <div className="page-hero__copy">
         <h1>{title}</h1>
         <p>{body}</p>
+      </div>
+      <div className="page-hero__visual" aria-hidden="true">
+        <span>{sectionNumber}</span>
+        <i />
       </div>
     </section>
   );

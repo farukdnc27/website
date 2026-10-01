@@ -53,16 +53,21 @@ button { color: inherit; }
 .page-main { padding-top: 68px; }
 .page-hero {
   align-items: start; background: var(--paper); display: grid; gap: clamp(30px, 7vw, 110px);
-  grid-template-columns: minmax(150px, .35fr) minmax(0, 1fr); min-height: 475px;
-  overflow: hidden; padding: 115px clamp(22px, 7vw, 112px) 95px; position: relative;
+  grid-template-columns: minmax(130px, .28fr) minmax(0, 1fr) minmax(260px, .42fr); min-height: 475px;
+  overflow: hidden; padding: 115px 0 95px clamp(22px, 7vw, 112px); position: relative;
 }
 .page-hero__grid { background-image: linear-gradient(rgba(16,23,33,.055) 1px, transparent 1px), linear-gradient(90deg, rgba(16,23,33,.055) 1px, transparent 1px); background-size: 36px 36px; inset: 0; mask-image: linear-gradient(to right, transparent 15%, black); pointer-events: none; position: absolute; }
 .page-hero::after { background: var(--blue); bottom: 0; content: ''; height: 10px; left: clamp(22px, 7vw, 112px); position: absolute; width: clamp(90px, 9vw, 150px); }
 .page-hero > * { position: relative; z-index: 1; }
 .page-hero .section-kicker { margin-top: 14px; }
-.page-hero__copy { max-width: 1050px; }
+.page-hero__copy { max-width: 850px; }
 .page-hero h1 { font-size: clamp(3.1rem, 6.5vw, 7rem); letter-spacing: -.065em; line-height: .94; margin-bottom: 30px; }
 .page-hero__copy > p { color: #45505a; font-size: clamp(1.05rem, 1.55vw, 1.32rem); line-height: 1.68; margin: 0; max-width: 790px; }
+.page-hero__visual { align-self: stretch; background: var(--ink); display: flex; justify-content: flex-end; margin: -115px 0 -95px; min-height: 475px; overflow: hidden; padding: 105px clamp(28px, 4vw, 70px); position: relative; }
+.page-hero__visual::before { background-image: linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px); background-size: 32px 32px; content: ''; inset: 0; position: absolute; }
+.page-hero__visual::after { background: var(--acid); bottom: 0; content: ''; height: 11px; left: 0; position: absolute; right: 0; }
+.page-hero__visual span { color: rgba(255,255,255,.1); font-family: var(--display); font-size: clamp(8rem, 15vw, 15rem); font-weight: 700; letter-spacing: -.1em; line-height: .78; position: relative; }
+.page-hero__visual i { background: var(--blue); height: 46px; left: clamp(26px, 3vw, 54px); position: absolute; top: 105px; width: 46px; }
 
 .hero { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(330px, .65fr); min-height: 820px; padding: 170px clamp(22px, 7vw, 112px) 0; position: relative; }
 .hero__grid { background-image: linear-gradient(rgba(16,23,33,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(16,23,33,.06) 1px, transparent 1px); background-size: 36px 36px; inset: 0; mask-image: linear-gradient(to bottom, black, transparent 75%); pointer-events: none; position: absolute; }
@@ -279,6 +284,7 @@ footer svg { height: 17px; width: 17px; }
   .hero__panel { margin-left: 24px; margin-right: -50px; padding-left: 38px; padding-right: 50px; }
   .stats-row { left: 50px; right: 50px; }
   .section, .contact-section, footer, .page-hero { padding-left: 50px; padding-right: 50px; }
+  .page-hero { gap: 45px; grid-template-columns: 120px minmax(0, 1fr) minmax(230px, .38fr); padding-right: 0; }
   .profile-layout, .timeline, .education-card, .professional-work { margin-left: 0; }
   .profile-layout { grid-template-columns: .8fr 1fr; }
   .principles--page { margin-left: 0; }
@@ -303,6 +309,7 @@ footer svg { height: 17px; width: 17px; }
   .section, .contact-section { padding: 90px 22px; }
   .page-main { padding-top: 68px; }
   .page-hero { display: block; min-height: 420px; padding: 95px 22px 75px; }
+  .page-hero__visual { display: none; }
   .page-hero h1 { font-size: clamp(3rem, 12vw, 5.5rem); }
   .page-hero .section-kicker { margin: 0 0 28px; }
   .home-index__heading { display: block; }
