@@ -313,15 +313,63 @@ function App() {
   }, [location.pathname]);
 
   useEffect(() => {
-    const labels = {
-      home: language === 'tr' ? 'Ana Sayfa' : 'Home',
-      about: t.nav.profile,
-      experience: t.nav.experience,
-      projects: t.nav.work,
-      cv: t.nav.cv,
+    const seo = language === 'tr' ? {
+      home: {
+        title: 'Ömer Faruk Dinçoğlu | Yazılım Geliştirici',
+        description: 'Ömer Faruk Dinçoğlu; C#, ASP.NET MVC, MSSQL, ERP entegrasyonları ve bilgisayarlı görü alanlarında çalışan Bilgisayar Mühendisi ve Yazılım Geliştirici.',
+      },
+      about: {
+        title: 'Hakkımda | Ömer Faruk Dinçoğlu',
+        description: 'Ömer Faruk Dinçoğlu’nun eğitimi, backend geliştirme yaklaşımı ve C#, ASP.NET MVC, MSSQL, ERP ve bilgisayarlı görü yetkinlikleri.',
+      },
+      experience: {
+        title: 'Yazılım Geliştirme Deneyimi | Ömer Faruk Dinçoğlu',
+        description: 'Ömer Faruk Dinçoğlu’nun PKF Teknoloji, RockTechSoft, Meray Kuruyemiş ve Sistem Yazılım deneyimleri ile üretimde çalışan sistemleri.',
+      },
+      projects: {
+        title: 'Yazılım Projeleri | Ömer Faruk Dinçoğlu',
+        description: 'Ömer Faruk Dinçoğlu’nun bilgisayarlı görü, C++, OpenGL, React, Python, Streamlit ve web geliştirme projeleri.',
+      },
+      cv: {
+        title: 'İnteraktif CV | Ömer Faruk Dinçoğlu',
+        description: 'Ömer Faruk Dinçoğlu’nun eğitim, deneyim, üretim sistemleri, projeler ve teknik yetkinliklerini içeren interaktif CV’si.',
+      },
+    } : {
+      home: {
+        title: 'Ömer Faruk Dinçoğlu | Software Developer',
+        description: 'Ömer Faruk Dinçoğlu is a Computer Engineer and Software Developer building C#, ASP.NET MVC, MSSQL, ERP integration, and computer vision projects.',
+      },
+      about: {
+        title: 'About | Ömer Faruk Dinçoğlu',
+        description: 'Learn about Ömer Faruk Dinçoğlu’s Computer Engineering education, backend development approach, and technical skills across C#, MSSQL, ERP, and computer vision.',
+      },
+      experience: {
+        title: 'Software Development Experience | Ömer Faruk Dinçoğlu',
+        description: 'Explore Ömer Faruk Dinçoğlu’s software development experience at PKF Teknoloji, RockTechSoft, Meray Kuruyemiş, and Sistem Yazılım.',
+      },
+      projects: {
+        title: 'Software Projects | Ömer Faruk Dinçoğlu',
+        description: 'Selected software projects by Ömer Faruk Dinçoğlu across computer vision, C++, OpenGL, React, Python, Streamlit, and web development.',
+      },
+      cv: {
+        title: 'Interactive CV | Ömer Faruk Dinçoğlu',
+        description: 'Interactive CV for Ömer Faruk Dinçoğlu covering education, software experience, production systems, projects, and technical skills.',
+      },
     };
-    document.title = `${labels[page]} · Ömer Faruk Dinçoğlu`;
-  }, [language, page, t.nav]);
+    const pagePath = { home: '/', about: '/about', experience: '/experience', projects: '/projects', cv: '/cv' }[page];
+    const canonicalUrl = `https://farukdincoglu.dev${pagePath}`;
+    const metadata = seo[page];
+
+    document.title = metadata.title;
+    document.querySelector<HTMLMetaElement>('meta[name="description"]')?.setAttribute('content', metadata.description);
+    document.querySelector<HTMLMetaElement>('meta[property="og:title"]')?.setAttribute('content', metadata.title);
+    document.querySelector<HTMLMetaElement>('meta[property="og:description"]')?.setAttribute('content', metadata.description);
+    document.querySelector<HTMLMetaElement>('meta[property="og:url"]')?.setAttribute('content', canonicalUrl);
+    document.querySelector<HTMLMetaElement>('meta[property="og:locale"]')?.setAttribute('content', language === 'tr' ? 'tr_TR' : 'en_US');
+    document.querySelector<HTMLMetaElement>('meta[name="twitter:title"]')?.setAttribute('content', metadata.title);
+    document.querySelector<HTMLMetaElement>('meta[name="twitter:description"]')?.setAttribute('content', metadata.description);
+    document.querySelector<HTMLLinkElement>('link[rel="canonical"]')?.setAttribute('href', canonicalUrl);
+  }, [language, page]);
 
   useEffect(() => {
     const section = cvSectionRef.current;
