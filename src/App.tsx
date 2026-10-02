@@ -23,7 +23,7 @@ const content = {
     viewWork: 'Projeleri incele', watchCv: 'CV’yi çalıştır', contact: 'E-posta gönder', location: 'İstanbul / Gaziantep',
     focusLabel: 'Şu an', focusTitle: 'PKF Teknoloji’de Yazılım Geliştirici',
     focusBody: 'ERP sistem entegrasyonları, backend servisleri, MVC web modülleri ve MSSQL tabanlı veri çözümleri üzerinde çalışıyorum.',
-    stats: [['6', 'Profesyonel deneyim adımı'], ['2026', 'Bilgisayar Mühendisliği mezuniyeti'], ['3', 'Odak alanı: backend, veri, görüntü']],
+    stats: [['6', 'Profesyonel rol ve staj'], ['2026', 'Bilgisayar Mühendisliği mezuniyeti'], ['3', 'Odak alanı: backend, veri, görüntü']],
     homeIndexKicker: 'Portföy Dizini',
     homeIndexTitle: 'Deneyimim, projelerim ve teknik bilgilerim.',
     homeIndexIntro: 'Kariyerim, üretimde çalışan kurumsal sistemler, kişisel projelerim ve interaktif CV ayrı sayfalarda düzenlendi.',
@@ -33,14 +33,14 @@ const content = {
       ['03', 'Projeler', 'Bilgisayarlı görüden web ve veri uygulamalarına seçili çalışmalar.'],
       ['04', 'İnteraktif CV', 'Kariyerimi terminalde satır satır görüntüleyin.'],
     ],
-    profileKicker: '01 / Hakkımda', profileTitle: 'Backend, ERP entegrasyonları ve kurumsal web uygulamaları geliştiriyorum.',
+    profileKicker: '02 / Hakkımda', profileTitle: 'Backend, ERP entegrasyonları ve kurumsal web uygulamaları geliştiriyorum.',
     profileBody: 'Çukurova Üniversitesi Bilgisayar Mühendisliği (İngilizce) mezunuyum. Farklı sektörlerde edindiğim staj deneyimlerini bugün tam zamanlı ürün geliştirme süreçlerine taşıyorum. Backend geliştirme ve veri tasarımındaki odağımı, bilgisayarlı görü ve gerçek zamanlı kamera uygulamalarından gelen problem çözme pratiğiyle birleştiriyorum.',
     principles: [
       ['01', 'Uygulanabilirlik', 'Analizden canlı ortama uzanan, gerçek ihtiyaca bağlı çözümler.'],
       ['02', 'Sistem düşüncesi', 'Servis, veri ve arayüz katmanlarını birlikte ele alan yaklaşım.'],
       ['03', 'Sürekli gelişim', 'Yeni araçları hızla öğrenip üretim pratiğine dönüştürme.'],
     ],
-    cvKicker: '02 / İnteraktif CV', cvTitle: 'Deneyim ve projelerim, terminal formatında.',
+    cvKicker: '05 / İnteraktif CV', cvTitle: 'Deneyim ve projelerim, terminal formatında.',
     cvIntro: 'Bölüme geldiğinizde CV otomatik olarak yazılmaya başlar.', cvReplay: 'Baştan oynat', cvShowAll: 'Tümünü göster',
     cvFile: 'omer-faruk-dincoglu.cv', cvRunning: 'CV oluşturuluyor', cvReady: 'CV hazır',
     cvLines: [
@@ -117,7 +117,7 @@ const content = {
       { title: 'Galatasaray UCL Squad', type: 'Frontend Deneyimi', body: 'Kadro verilerini saha dizilişi ve liste görünümünde sunan; JSON veri yapısı ve SVG saha grafikleri kullanan responsive taraftar projesi.', tech: ['React', 'TypeScript', 'Vite', 'SVG'], image: uclSquadImage, imageAlt: 'Galatasaray UCL Squad canlı proje ekranı', href: 'https://github.com/farukdnc27/ucl2' },
     ],
     projectLink: 'GitHub’da incele',
-    skillsKicker: '05 / Teknik Yetkinlikler', skillsTitle: 'Kullandığım teknolojiler ve yetkinlikler',
+    skillsKicker: 'Teknik Yetkinlikler', skillsTitle: 'Kullandığım teknolojiler ve yetkinlikler',
     skillGroups: [
       { title: 'Backend & Web', body: 'Servisler, MVC modülleri ve entegrasyonlar', items: ['C#', 'ASP.NET MVC', 'Backend mimarileri', 'JavaScript', 'Servis entegrasyonları'] },
       { title: 'Veri & ERP', body: 'Modelleme, sorgulama ve iş sistemleri', items: ['MSSQL', 'SQL', 'Veri modelleme', 'Performans iyileştirme', 'Canias ERP'] },
@@ -131,7 +131,7 @@ const content = {
     heroTitle: 'I build backend and web applications for enterprise workflows.', heroBody: 'I build web applications with C# and ASP.NET MVC, data layers with MSSQL, ERP integrations, and computer vision projects.',
     viewWork: 'Explore my work', watchCv: 'Run my CV', contact: 'Send an email', location: 'Istanbul / Gaziantep',
     focusLabel: 'Currently', focusTitle: 'Software Developer at PKF Technology', focusBody: 'Working on ERP system integrations, backend services, MVC web modules, and MSSQL-based data solutions.',
-    stats: [['6', 'Professional experience steps'], ['2026', 'Computer Engineering graduate'], ['3', 'Focus areas: backend, data, vision']],
+    stats: [['6', 'Career roles & internships'], ['2026', 'Computer Engineering graduate'], ['3', 'Focus areas: backend, data, vision']],
     homeIndexKicker: 'Portfolio Index',
     homeIndexTitle: 'My experience, projects, and technical background.',
     homeIndexIntro: 'My career, production enterprise systems, personal projects, and interactive CV now live on dedicated pages.',
@@ -141,14 +141,14 @@ const content = {
       ['03', 'Projects', 'Selected work across computer vision, web, and data.'],
       ['04', 'Interactive CV', 'Watch my career render line by line in the terminal.'],
     ],
-    profileKicker: '01 / About', profileTitle: 'I build backend systems, ERP integrations, and enterprise web applications.',
+    profileKicker: '02 / About', profileTitle: 'I build backend systems, ERP integrations, and enterprise web applications.',
     profileBody: 'I graduated from the English-taught Computer Engineering program at Çukurova University. Today, I bring the experience I gained through internships in different industries into full-time product development. I combine my focus on backend development and data design with the problem-solving practice I gained from computer vision and real-time camera applications.',
     principles: [
       ['01', 'Practical delivery', 'Solutions tied to real needs, from analysis through production.'],
       ['02', 'Systems thinking', 'An approach that considers service, data, and interface layers together.'],
       ['03', 'Continuous growth', 'Learning new tools quickly and turning them into production practice.'],
     ],
-    cvKicker: '02 / Interactive CV', cvTitle: 'My experience and projects in terminal format.',
+    cvKicker: '05 / Interactive CV', cvTitle: 'My experience and projects in terminal format.',
     cvIntro: 'The CV starts typing automatically when it enters the screen.', cvReplay: 'Replay', cvShowAll: 'Show all',
     cvFile: 'omer-faruk-dincoglu.cv', cvRunning: 'Rendering CV', cvReady: 'CV ready',
     cvLines: [
@@ -225,7 +225,7 @@ const content = {
       { title: 'Galatasaray UCL Squad', type: 'Frontend Experience', body: 'A responsive fan project presenting squad data in formation and list views with a JSON data model and SVG pitch graphics.', tech: ['React', 'TypeScript', 'Vite', 'SVG'], image: uclSquadImage, imageAlt: 'Live Galatasaray UCL Squad project screen', href: 'https://github.com/farukdnc27/ucl2' },
     ],
     projectLink: 'View on GitHub',
-    skillsKicker: '05 / Technical Skills', skillsTitle: 'Technologies I use',
+    skillsKicker: 'Technical Skills', skillsTitle: 'Technologies I use',
     skillGroups: [
       { title: 'Backend & Web', body: 'Services, MVC modules, and integrations', items: ['C#', 'ASP.NET MVC', 'Backend architecture', 'JavaScript', 'Service integrations'] },
       { title: 'Data & ERP', body: 'Modelling, querying, and business systems', items: ['MSSQL', 'SQL', 'Data modelling', 'Performance improvement', 'Canias ERP'] },
@@ -460,7 +460,7 @@ function App() {
           <div className="hero__grid" aria-hidden="true" />
           <div className="hero__copy reveal">
             <div className="availability"><span />{t.availability}</div>
-            <p className="eyebrow">{t.eyebrow}</p>
+            <div className="hero-identity"><strong>Ömer Faruk Dinçoğlu</strong><span>{t.eyebrow}</span></div>
             <h1 id="hero-title">{t.heroTitle}</h1>
             <p className="hero__body">{t.heroBody}</p>
             <div className="hero__actions"><Link className="button button--primary" to="/cv">{t.watchCv}</Link><Link className="button button--ghost" to="/projects">{t.viewWork}</Link></div>
